@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="popup.css">
-    <title>Chrome Addon v3: popup</title>
-</head>
-<body>
-    This is the <span class="special-text">HTML</span> body of the addon.
-</body>
+<html>
+  <head>
+    <title>ChatGPT In Frame</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 600px;
+        width: 800px;
+        overflow: hidden;
+      }
+      iframe {
+        height: 100%;
+        width: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe src="https://chat.openai.com"></iframe>
+  </body>
 </html>
